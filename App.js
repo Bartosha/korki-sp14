@@ -5,7 +5,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3000').then(response => {
+    axios.get('https://korki-sp14.onrender.com').then(response => {
       setData(response.data);
     });
   }, []);
